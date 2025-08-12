@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADStore - Sale e Promoções. Aproveite as melhores ofertas e descontos exclusivos da ADStore.">
+    <meta name="keywords" content="sale, promoções, descontos, ofertas, liquidação, moda, ADStore">
+    <meta name="author" content="ADStore">
+    <title>Sale e Promoções | ADStore - Moda que Inspira</title>
+    <link rel="stylesheet" href="css/landingpage/landingpage.css">
+    <link rel="stylesheet" href="css/sale.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon-bag.png">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="Navegação principal">
+            <div class="navbar-container">
+                <a href="landingpage.html" class="navbar-brand" aria-label="ADStore - Página inicial">
+                    <span class="brand-text">AD</span><span class="store-color">Store</span>
+                </a>
+                
+                <div class="navbar-menu-toggle" id="navbar-toggle" aria-label="Abrir menu de navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="navbar-links" id="navbar-links">
+                    <li class="navbar-item">
+                        <a class="link-navbar" href="feminino.html" aria-label="Seção feminina">Feminino</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="link-navbar" href="masculino.html" aria-label="Seção masculina">Masculino</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="link-navbar" href="novidades.html" aria-label="Ver novidades">Novidades</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="link-navbar active" href="sale.html" aria-label="Promoções e ofertas">Sale</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-actions">
+                    <li class="navbar-item">
+                        <button class="navbar-button" aria-label="Pesquisar produtos">
+                            <img class="navbar-icon" src="img/icon-search.png" alt="Pesquisar">
+                        </button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-button" aria-label="Minha conta">
+                            <img class="navbar-icon" src="img/icon-user.png" alt="Conta">
+                        </button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-button cart-button" aria-label="Carrinho de compras">
+                            <img class="navbar-icon" src="img/icon-bag.png" alt="Carrinho">
+                            <span class="cart-count">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero sale-hero">
+            <div class="hero-content">
+                <div class="sale-badge">SALE</div>
+                <h1 class="hero-title">Mega Promoção</h1>
+                <p class="hero-subtitle">Até 70% de desconto em produtos selecionados. Aproveite as melhores ofertas da ADStore!</p>
+                <div class="countdown-timer" id="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Dias</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Min</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seg</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale Categories -->
+        <section class="sale-categories-section">
+            <div class="container">
+                <h2 class="section-title">Categorias em Promoção</h2>
+                <div class="sale-categories-grid">
+                    <div class="sale-category-card" data-category="feminino">
+                        <div class="sale-category-image">
+                            <div class="sale-category-overlay"></div>
+                            <span class="sale-category-badge">-50%</span>
+                        </div>
+                        <div class="sale-category-content">
+                            <h3 class="sale-category-name">Feminino</h3>
+                            <p class="sale-category-description">Vestidos, blusas e muito mais</p>
+                            <span class="sale-category-count">24 produtos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="sale-category-card" data-category="masculino">
+                        <div class="sale-category-image">
+                            <div class="sale-category-overlay"></div>
+                            <span class="sale-category-badge">-40%</span>
+                        </div>
+                        <div class="sale-category-content">
+                            <h3 class="sale-category-name">Masculino</h3>
+                            <p class="sale-category-description">Camisas, calças e ternos</p>
+                            <span class="sale-category-count">18 produtos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="sale-category-card" data-category="acessorios">
+                        <div class="sale-category-image">
+                            <div class="sale-category-overlay"></div>
+                            <span class="sale-category-badge">-60%</span>
+                        </div>
+                        <div class="sale-category-content">
+                            <h3 class="sale-category-name">Acessórios</h3>
+                            <p class="sale-category-description">Bolsas, cintos e relógios</p>
+                            <span class="sale-category-count">32 produtos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale Products -->
+        <section class="sale-products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Produtos em Promoção</h2>
+                    <p class="section-subtitle">Aproveite os melhores preços antes que acabem</p>
+                </div>
+                
+                <div class="sale-filters">
+                    <div class="filter-group">
+                        <label for="discount-filter" class="filter-label">Desconto:</label>
+                        <select id="discount-filter" class="filter-select">
+                            <option value="">Todos os Descontos</option>
+                            <option value="10-20">10% - 20%</option>
+                            <option value="21-40">21% - 40%</option>
+                            <option value="41-60">41% - 60%</option>
+                            <option value="61+">61% ou mais</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="price-filter" class="filter-label">Preço:</label>
+                        <select id="price-filter" class="filter-select">
+                            <option value="">Todos os Preços</option>
+                            <option value="0-50">Até R$ 50</option>
+                            <option value="51-100">R$ 51 - R$ 100</option>
+                            <option value="101-200">R$ 101 - R$ 200</option>
+                            <option value="201+">Acima de R$ 200</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort-filter" class="filter-label">Ordenar:</label>
+                        <select id="sort-filter" class="filter-select">
+                            <option value="maior-desconto">Maior Desconto</option>
+                            <option value="menor-preco">Menor Preço</option>
+                            <option value="maior-preco">Maior Preço</option>
+                            <option value="mais-popular">Mais Popular</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Product cards will be populated by JavaScript -->
+                </div>
+                
+                <div class="load-more">
+                    <button class="btn btn-outline load-more-btn" id="load-more-btn">
+                        Ver Mais Ofertas
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flash Sale Section -->
+        <section class="flash-sale-section">
+            <div class="container">
+                <div class="flash-sale-header">
+                    <h2 class="section-title">Flash Sale</h2>
+                    <p class="section-subtitle">Ofertas relâmpago que duram apenas 24 horas!</p>
+                </div>
+                
+                <div class="flash-sale-grid">
+                    <div class="flash-sale-item">
+                        <div class="flash-sale-image">
+                            <img src="img/hero.png" alt="Flash Sale 1" class="flash-sale-img">
+                            <div class="flash-sale-overlay">
+                                <span class="flash-sale-badge">-70%</span>
+                                <div class="flash-sale-timer">
+                                    <span class="timer-label">Termina em:</span>
+                                    <span class="timer-time">23:45:12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flash-sale-content">
+                            <h3 class="flash-sale-title">Vestido Elegante</h3>
+                            <div class="flash-sale-price">
+                                <span class="original-price">R$ 299,90</span>
+                                <span class="sale-price">R$ 89,90</span>
+                            </div>
+                            <button class="btn btn-primary flash-sale-btn">Comprar Agora</button>
+                        </div>
+                    </div>
+                    
+                    <div class="flash-sale-item">
+                        <div class="flash-sale-image">
+                            <img src="img/hero.png" alt="Flash Sale 2" class="flash-sale-img">
+                            <div class="flash-sale-overlay">
+                                <span class="flash-sale-badge">-65%</span>
+                                <div class="flash-sale-timer">
+                                    <span class="timer-label">Termina em:</span>
+                                    <span class="timer-time">18:30:45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flash-sale-content">
+                            <h3 class="flash-sale-title">Terno Premium</h3>
+                            <div class="flash-sale-price">
+                                <span class="original-price">R$ 899,90</span>
+                                <span class="sale-price">R$ 314,90</span>
+                            </div>
+                            <button class="btn btn-primary flash-sale-btn">Comprar Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 id="newsletter-title" class="newsletter-title">Fique por dentro das ofertas</h2>
+                    <p class="newsletter-description">Receba em primeira mão as melhores promoções, descontos exclusivos e ofertas relâmpago da ADStore</p>
+                    
+                    <form class="newsletter-form" role="form" aria-label="Formulário de newsletter">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" name="email" class="newsletter-input" 
+                                   placeholder="Seu melhor e-mail" required aria-required="true"
+                                   aria-describedby="newsletter-error">
+                            <button type="submit" class="btn btn-primary newsletter-btn" aria-label="Inscrever-se na newsletter">
+                                Inscrever-se
+                            </button>
+                        </div>
+                        <div id="newsletter-error" class="form-error" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-brand-name">AD<span class="store-color">Store</span></h3>
+                    <p class="footer-description">Moda que inspira, estilo que transforma.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Produtos</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="feminino.html" class="footer-link">Feminino</a></li>
+                            <li><a href="masculino.html" class="footer-link">Masculino</a></li>
+                            <li><a href="novidades.html" class="footer-link">Novidades</a></li>
+                            <li><a href="sale.html" class="footer-link">Sale</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Suporte</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#ajuda" class="footer-link">Central de Ajuda</a></li>
+                            <li><a href="#contato" class="footer-link">Contato</a></li>
+                            <li><a href="#trocas" class="footer-link">Trocas e Devoluções</a></li>
+                            <li><a href="#frete" class="footer-link">Informações de Frete</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Empresa</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#sobre" class="footer-link">Sobre Nós</a></li>
+                            <li><a href="#carreira" class="footer-link">Carreiras</a></li>
+                            <li><a href="#sustentabilidade" class="footer-link">Sustentabilidade</a></li>
+                            <li><a href="#imprensa" class="footer-link">Imprensa</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 ADStore. Todos os direitos reservados.</p>
+                    <div class="footer-legal-links">
+                        <a href="#privacidade" class="footer-legal-link">Política de Privacidade</a>
+                        <a href="#termos" class="footer-legal-link">Termos de Uso</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Siga-nos no Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Siga-nos no Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Siga-nos no Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo da página">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Sample product data for sale
+        const products = [
+            {
+                id: 1,
+                name: "Vestido Floral Elegante",
+                category: "feminino",
+                price: 89.90,
+                originalPrice: 299.90,
+                image: "img/hero.png",
+                sizes: ["P", "M", "G"],
+                colors: ["Azul", "Rosa", "Verde"],
+                rating: 4.7,
+                reviews: 156,
+                isNew: false,
+                isSale: true,
+                discount: 70
+            },
+            {
+                id: 2,
+                name: "Camisa Social Premium",
+                category: "masculino",
+                price: 79.90,
+                originalPrice: 199.90,
+                image: "img/hero.png",
+                sizes: ["P", "M", "G", "GG"],
+                colors: ["Branco", "Azul", "Rosa"],
+                rating: 4.6,
+                reviews: 89,
+                isNew: false,
+                isSale: true,
+                discount: 60
+            },
+            {
+                id: 3,
+                name: "Bolsa de Couro Legítimo",
+                category: "acessorios",
+                price: 119.90,
+                originalPrice: 399.90,
+                image: "img/hero.png",
+                sizes: ["Único"],
+                colors: ["Preto", "Marrom", "Bege"],
+                rating: 4.8,
+                reviews: 234,
+                isNew: false,
+                isSale: true,
+                discount: 70
+            },
+            {
+                id: 4,
+                name: "Calça Jeans Premium",
+                category: "feminino",
+                price: 99.90,
+                originalPrice: 249.90,
+                image: "img/hero.png",
+                sizes: ["P", "M", "G", "GG"],
+                colors: ["Azul", "Preto", "Cinza"],
+                rating: 4.5,
+                reviews: 123,
+                isNew: false,
+                isSale: true,
+                discount: 60
+            },
+            {
+                id: 5,
+                name: "Terno Slim Fit",
+                category: "masculino",
+                price: 399.90,
+                originalPrice: 999.90,
+                image: "img/hero.png",
+                sizes: ["P", "M", "G", "GG"],
+                colors: ["Preto", "Azul Marinho", "Cinza"],
+                rating: 4.9,
+                reviews: 67,
+                isNew: false,
+                isSale: true,
+                discount: 60
+            },
+            {
+                id: 6,
+                name: "Relógio Elegante",
+                category: "acessorios",
+                price: 199.90,
+                originalPrice: 599.90,
+                image: "img/hero.png",
+                sizes: ["Único"],
+                colors: ["Prata", "Dourado", "Preto"],
+                rating: 4.7,
+                reviews: 198,
+                isNew: false,
+                isSale: true,
+                discount: 67
+            }
+        ];
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const saleEnd = new Date('2024-12-31T23:59:59').getTime();
+            const distance = saleEnd - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            } else {
+                document.getElementById('countdown-timer').innerHTML = '<div class="sale-ended">Promoção Encerrada!</div>';
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Mobile Navigation Toggle
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navbarLinks = document.getElementById('navbar-links');
+        
+        navbarToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+            navbarToggle.classList.toggle('active');
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Newsletter Form
+        const newsletterForm = document.querySelector('.newsletter-form');
+        const newsletterInput = document.getElementById('newsletter-email');
+        const newsletterError = document.getElementById('newsletter-error');
+        
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = newsletterInput.value.trim();
+            
+            if (!email) {
+                showError('Por favor, insira um e-mail válido.');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                showError('Por favor, insira um e-mail válido.');
+                return;
+            }
+            
+            showSuccess('Inscrição realizada com sucesso!');
+            newsletterInput.value = '';
+        });
+        
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        function showError(message) {
+            newsletterError.textContent = message;
+            newsletterError.classList.add('show');
+            setTimeout(() => {
+                newsletterError.classList.remove('show');
+            }, 5000);
+        }
+        
+        function showSuccess(message) {
+            newsletterError.textContent = message;
+            newsletterError.classList.add('show', 'success');
+            setTimeout(() => {
+                newsletterError.classList.remove('show', 'success');
+            }, 5000);
+        }
+
+        // Product rendering
+        function renderProducts(productsToRender = products) {
+            const productsGrid = document.getElementById('products-grid');
+            productsGrid.innerHTML = '';
+            
+            productsToRender.forEach(product => {
+                const productCard = createProductCard(product);
+                productsGrid.appendChild(productCard);
+            });
+        }
+
+        function createProductCard(product) {
+            const card = document.createElement('article');
+            card.className = 'product-card';
+            card.setAttribute('data-category', product.category);
+            
+            card.innerHTML = `
+                <div class="product-image">
+                    <img src="${product.image}" alt="${product.name}" class="product-img">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn" aria-label="Visualização rápida">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                        <button class="wishlist-btn" aria-label="Adicionar à lista de desejos">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="product-badge sale">-${product.discount}%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-name">${product.name}</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            ${generateStars(product.rating)}
+                        </div>
+                        <span class="rating-count">(${product.reviews})</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="original-price">R$ ${product.originalPrice.toFixed(2)}</span>
+                        <span class="current-price">R$ ${product.price.toFixed(2)}</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar ao carrinho">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function generateStars(rating) {
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 !== 0;
+            let stars = '';
+            
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<span class="star full">★</span>';
+            }
+            
+            if (hasHalfStar) {
+                stars += '<span class="star half">★</span>';
+            }
+            
+            const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<span class="star empty">★</span>';
+            }
+            
+            return stars;
+        }
+
+        // Filter functionality
+        document.getElementById('discount-filter').addEventListener('change', applyFilters);
+        document.getElementById('price-filter').addEventListener('change', applyFilters);
+        document.getElementById('sort-filter').addEventListener('change', applyFilters);
+
+        function applyFilters() {
+            const discountFilter = document.getElementById('discount-filter').value;
+            const priceFilter = document.getElementById('price-filter').value;
+            const sortFilter = document.getElementById('sort-filter').value;
+            
+            let filteredProducts = [...products];
+            
+            // Apply discount filter
+            if (discountFilter) {
+                const [min, max] = discountFilter.split('-').map(Number);
+                if (max) {
+                    filteredProducts = filteredProducts.filter(product => 
+                        product.discount >= min && product.discount <= max
+                    );
+                } else {
+                    filteredProducts = filteredProducts.filter(product => 
+                        product.discount >= min
+                    );
+                }
+            }
+            
+            // Apply price filter
+            if (priceFilter) {
+                const [min, max] = priceFilter.split('-').map(Number);
+                if (max) {
+                    filteredProducts = filteredProducts.filter(product => 
+                        product.price >= min && product.price <= max
+                    );
+                } else {
+                    filteredProducts = filteredProducts.filter(product => 
+                        product.price >= min
+                    );
+                }
+            }
+            
+            // Sort products
+            switch (sortFilter) {
+                case 'maior-desconto':
+                    filteredProducts.sort((a, b) => b.discount - a.discount);
+                    break;
+                case 'menor-preco':
+                    filteredProducts.sort((a, b) => a.price - b.price);
+                    break;
+                case 'maior-preco':
+                    filteredProducts.sort((a, b) => b.price - a.price);
+                    break;
+                case 'mais-popular':
+                    filteredProducts.sort((a, b) => b.reviews - a.reviews);
+                    break;
+            }
+            
+            renderProducts(filteredProducts);
+        }
+
+        // Category filtering
+        document.querySelectorAll('.sale-category-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const category = card.dataset.category;
+                filterProductsByCategory(category);
+                
+                // Update active state
+                document.querySelectorAll('.sale-category-card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+            });
+        });
+
+        function filterProductsByCategory(category) {
+            const filteredProducts = products.filter(product => product.category === category);
+            renderProducts(filteredProducts);
+        }
+
+        // Load more functionality
+        let currentPage = 1;
+        const productsPerPage = 6;
+        
+        document.getElementById('load-more-btn').addEventListener('click', () => {
+            currentPage++;
+            const startIndex = (currentPage - 1) * productsPerPage;
+            const endIndex = startIndex + productsPerPage;
+            const moreProducts = products.slice(startIndex, endIndex);
+            
+            if (moreProducts.length > 0) {
+                moreProducts.forEach(product => {
+                    const productCard = createProductCard(product);
+                    document.getElementById('products-grid').appendChild(productCard);
+                });
+            }
+            
+            if (endIndex >= products.length) {
+                document.getElementById('load-more-btn').style.display = 'none';
+            }
+        });
+
+        // Initialize
+        renderProducts();
+    </script>
+</body>
+
+</html>
